@@ -5,9 +5,9 @@
 	(uuid "9cc4afb8-2287-49ce-8680-21f7d5eb31c8")
 	(paper "A5")
 	(title_block
-		(title "DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter")
+		(title "${BOARD_NAME}")
 		(date "2026-06-02")
-		(rev "1.1")
+		(rev "${BOARD_REV}")
 		(comment 1 "For DataFlyer 1200 SCSI+ And Phase5 Blizzard IV SCSI kit")
 		(comment 2 "Based on SCSI cable by highpuff iKod.se")
 		(comment 3 "ikod.se/scsi-cable")

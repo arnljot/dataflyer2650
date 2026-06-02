@@ -253,7 +253,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1.0"
+      "sch_revision": "${BOARD_REV}"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -566,7 +566,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "./",
-      "plot": "",
+      "plot": "gerbers/",
       "specctra_dsn": "dataflyer-2650.dsn",
       "step": "",
       "vrml": ""
@@ -707,7 +707,10 @@
       "dataflyer-2650"
     ]
   ],
-  "text_variables": {},
+  "text_variables": {
+    "BOARD_NAME": "DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter",
+    "BOARD_REV": "1.1.1"
+  },
   "tuning_profiles": {
     "meta": {
       "version": 0

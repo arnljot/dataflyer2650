@@ -56,3 +56,14 @@ TERMPWR: 26
 - Routed from IDC26 pin 24 → IDC50 pin 26.
 - Carries up to 1.5 A; the PCB routes this with 0.5 mm trace
   (other signals are 0.25 mm).
+
+## References
+
+- **DB25 SCSI pinout** — Amiga Hardware Reference Manual, section
+  "External SCSI Disk DB25 Female (A3000 only)":
+  <https://www.theflatnet.de/pub/cbm/amiga/AmigaDevDocs/hard_e.html#e-1-8>
+  (theflatnet.de mirrors the old AmigaDevDocs)
+- **IDC26-to-IDC50 mapping** — highpuff's replacement cable for the
+  Phase5 Blizzard IV SCSI kit: <https://ikod.se/scsi-cable>
+- **DataFlyer SCSI+ Users Manual**, page 33 — confirms the DB25 column
+  matches Expansion Systems' implementation

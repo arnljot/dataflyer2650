@@ -10,34 +10,34 @@ for the Expansion Systems DataFlyer 1200 SCSI+.
 
 ## Full mapping table
 
-| IDC26 pin | DB25 pin | Signal     | IDC50 pin |
-|-----------|----------|------------|-----------|
-| 1         | 1        | -REQ       | 48        |
-| 2         | 14       | GND        | GND net   |
-| 3         | 2        | -MSG       | 42        |
-| 4         | 15       | -C/D       | 46        |
-| 5         | 3        | -I/O       | 50        |
-| 6         | 16       | GND        | GND net   |
-| 7         | 4        | -RST       | 40        |
-| 8         | 17       | -ATN       | 32        |
-| 9         | 5        | -ACK       | 38        |
-| 10        | 18       | GND        | GND net   |
-| 11        | 6        | -BSY       | 36        |
-| 12        | 19       | -SEL       | 44        |
-| 13        | 7        | GND        | GND net   |
-| 14        | 20       | -DBP       | 18        |
-| 15        | 8        | -DB0       | 2         |
-| 16        | 21       | -DB1       | 4         |
-| 17        | 9        | GND        | GND net   |
-| 18        | 22       | -DB2       | 6         |
-| 19        | 10       | -DB3       | 8         |
-| 20        | 23       | -DB4       | 10        |
-| 21        | 11       | -DB5       | 12        |
-| 22        | 24       | GND        | GND net   |
-| 23        | 12       | -DB6       | 14        |
-| 24        | 25       | TERMPWR    | 26        |
-| 25        | 13       | -DB7       | 16        |
-| 26        | —        | GND (opt.) | GND net   |
+| Signal     | IDC26 pin | IDC50 pin | DB25 pin |
+|------------|-----------|-----------|----------|
+| -REQ       | 1         | 48        | 1        |
+| GND        | 2         | GND net   | 14       |
+| -MSG       | 3         | 42        | 2        |
+| -C/D       | 4         | 46        | 15       |
+| -I/O       | 5         | 50        | 3        |
+| GND        | 6         | GND net   | 16       |
+| -RST       | 7         | 40        | 4        |
+| -ATN       | 8         | 32        | 17       |
+| -ACK       | 9         | 38        | 5        |
+| GND        | 10        | GND net   | 18       |
+| -BSY       | 11        | 36        | 6        |
+| -SEL       | 12        | 44        | 19       |
+| GND        | 13        | GND net   | 7        |
+| -DBP       | 14        | 18        | 20       |
+| -DB0       | 15        | 2         | 8        |
+| -DB1       | 16        | 4         | 21       |
+| GND        | 17        | GND net   | 9        |
+| -DB2       | 18        | 6         | 22       |
+| -DB3       | 19        | 8         | 10       |
+| -DB4       | 20        | 10        | 23       |
+| -DB5       | 21        | 12        | 11       |
+| GND        | 22        | GND net   | 24       |
+| -DB6       | 23        | 14        | 12       |
+| TERMPWR    | 24        | 26        | 25       |
+| -DB7       | 25        | 16        | 13       |
+| GND (opt.) | 26        | GND net   | —        |
 
 ## IDC50 ground net
 

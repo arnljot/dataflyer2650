@@ -71,6 +71,13 @@ See `PINOUT.md` for the full mapping table.
 - **1.0** — Initial release.
 - **1.1** — Bugfix: tie SCSI-1 reserved IDC50 pins (20, 22, 24, 28, 30, 34) to GND. PCB: J1 moved ~3.5 mm inboard for cleaner routing (does not affect mating with DataFlyer 1200 SCSI+ or Phase5 Blizzard IV SCSI kit).
 
+## Release policy
+
+Tagged GitHub releases are published only for **major** (`X.0`) and **minor**
+(`X.Y`) versions. Patch versions (`X.Y.Z`) are committed to `main` only and aim
+to remain production-ready — the Gerbers in the tree on any `main` commit
+should be fabricable — but are not formally released.
+
 ## Bill of materials
 
 See `BOM.csv`. Total cost per board ~$3-5 plus PCB fabrication.

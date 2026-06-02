@@ -8,7 +8,7 @@
 		(title "DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter")
 		(date "2026-06-02")
 		(rev "1.1")
-		(comment 1 "For Dataflyer 1200 SCSI+ And Phase5 Blizzard IV SCSI kit")
+		(comment 1 "For DataFlyer 1200 SCSI+ And Phase5 Blizzard IV SCSI kit")
 		(comment 2 "Based on SCSI cable by highpuff iKod.se")
 		(comment 3 "ikod.se/scsi-cable")
 		(comment 4 "©2026 Arnljot Arntsen <arnljot_arntsen@hotmail.com>, license: CERN-OHL-S-2.0")

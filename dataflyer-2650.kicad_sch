@@ -5,7 +5,7 @@
 	(uuid "9cc4afb8-2287-49ce-8680-21f7d5eb31c8")
 	(paper "A5")
 	(title_block
-		(title "Dataflyer 1200 SCSI+ 26pin to 50pin Adapter")
+		(title "DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter")
 		(date "2026-06-02")
 		(rev "1.1")
 		(comment 1 "For Dataflyer 1200 SCSI+ And Phase5 Blizzard IV SCSI kit")

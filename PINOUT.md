@@ -68,6 +68,9 @@ TERMPWR: 26
   "External SCSI Disk DB25 Female (A3000 only)":
   <https://www.theflatnet.de/pub/cbm/amiga/AmigaDevDocs/hard_e.html#e-1-8>
   (theflatnet.de mirrors the old AmigaDevDocs)
+- **50-pin SCSI-1 connector pinout** — cdmediaworld.com SCSI pinout
+  reference, "50-Pin Connector Pinout" section:
+  <https://www.cdmediaworld.com/hardware/scsi/pinout.htm#50-Pin%20Connector%20Pinout>
 - **IDC26-to-IDC50 mapping** — highpuff's replacement cable for the
   Phase5 Blizzard IV SCSI kit: <https://ikod.se/scsi-cable>
 - **DataFlyer SCSI+ Users Manual**, page 33 — confirms the DB25 column

@@ -10,7 +10,7 @@
 	(title_block
 		(title "Dataflyer/Blizzard 26-to-50 SCSI Adapter (T-shape)")
 		(date "2026-06-02")
-		(rev "1.8")
+		(rev "1.1")
 		(comment 1 "T-shape: J1 horizontal at top-left corner, J2 vertical.")
 	)
 	(layers

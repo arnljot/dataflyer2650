@@ -7,7 +7,7 @@
 	(title_block
 		(title "Dataflyer 1200 SCSI+ 26pin to 50pin Adapter")
 		(date "2026-06-02")
-		(rev "1.0")
+		(rev "1.1")
 		(comment 1 "For Dataflyer 1200 SCSI+ And Phase5 Blizzard IV SCSI kit")
 		(comment 2 "Based on SCSI cable by highpuff iKod.se")
 		(comment 3 "ikod.se/scsi-cable")
@@ -1631,6 +1631,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 60.96) (xy 167.64 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27bf19e1-24bc-4a73-bf67-f622995d99e5")
+	)
+	(wire
+		(pts
 			(xy 162.56 81.28) (xy 167.64 81.28)
 		)
 		(stroke
@@ -1638,6 +1648,16 @@
 			(type default)
 		)
 		(uuid "2bfc8ddd-8acc-4575-8703-0a18c5c710ec")
+	)
+	(wire
+		(pts
+			(xy 162.56 55.88) (xy 167.64 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fc46c2e-e180-4165-8b7a-17af1d59e3dc")
 	)
 	(wire
 		(pts
@@ -1788,6 +1808,26 @@
 			(type default)
 		)
 		(uuid "7c4cdd94-349a-4c98-9add-7ff2e3aff213")
+	)
+	(wire
+		(pts
+			(xy 162.56 63.5) (xy 167.64 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82086215-47eb-4321-873e-066f30022139")
+	)
+	(wire
+		(pts
+			(xy 162.56 53.34) (xy 167.64 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "823350d3-8d3f-4520-ae32-1ebd98346168")
 	)
 	(wire
 		(pts
@@ -2058,6 +2098,16 @@
 			(type default)
 		)
 		(uuid "bb04e3a2-2d7c-4e41-afad-15f3f59274a3")
+	)
+	(wire
+		(pts
+			(xy 162.56 50.8) (xy 167.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb721f2b-1811-4eed-8b53-cb97ff212eea")
 	)
 	(wire
 		(pts
@@ -2357,6 +2407,29 @@
 		(uuid "2e3de918-bcaf-464e-a5af-8f20567fedf8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 85.09 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 167.64 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34153215-11a2-410a-88f2-6d88d284d226")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2804,6 +2877,29 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 167.64 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f3cfbdd-6117-4f91-925c-8b1faf0242c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "DB1"
 		(shape input)
 		(at 167.64 30.48 0)
@@ -3011,6 +3107,29 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 167.64 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ed2d5b2-2025-4798-bd9d-b9baae4df793")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "DB7"
 		(shape input)
 		(at 85.09 67.31 0)
@@ -3172,6 +3291,29 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape input)
+		(at 167.64 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "96fa6a29-9342-4470-a098-f76a1fe61110")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "MSG"
 		(shape input)
 		(at 167.64 78.74 0)
@@ -3277,6 +3419,29 @@
 		(uuid "aac113a0-e889-40eb-9ddb-60072fd86be3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 142.24 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 167.64 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b55a0810-d099-4cc8-862e-4f6f95274912")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

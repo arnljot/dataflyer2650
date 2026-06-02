@@ -67,10 +67,9 @@
     )
   )
   (class "kicad_default"
-    REQ MSG CD IO RST ATN ACK BSY
-    SEL DBP DB0 DB1 DB2 DB3 DB4 DB5
-    DB6 DB7 "unconnected-(J2-Pin_20-Pad20)" "unconnected-(J2-Pin_22-Pad22)" "unconnected-(J2-Pin_24-Pad24)" "unconnected-(J2-Pin_25-Pad25)" "unconnected-(J2-Pin_28-Pad28)" "unconnected-(J2-Pin_30-Pad30)"
-    "unconnected-(J2-Pin_34-Pad34)"
+    DB0 DB1 DB2 DB3 DB4 DB5 DB6 DB7
+    DBP "unconnected-(J2-Pin_25-Pad25)" ATN "unconnected-(J2-Pin_34-Pad34)" BSY ACK RST MSG
+    SEL CD REQ IO
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule

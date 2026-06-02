@@ -42,11 +42,16 @@ for the Expansion Systems DataFlyer 1200 SCSI+.
 ## IDC50 ground net
 
 Per the DataFlyer manual (page 33): **all odd pins except pin 25 are
-connected to ground**.
+connected to ground**. Additionally, the SCSI-1 reserved even pins
+**20, 22, 24, 28, 30, 34** are also tied to GND on this board for
+cleaner signaling and to match common SCSI-1 controller practice.
 
 ```
-GND: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 27, 29, 31, 33, 35,
+GND (odd, per DataFlyer manual):
+     1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 27, 29, 31, 33, 35,
      37, 39, 41, 43, 45, 47, 49
+GND (even, SCSI-1 reserved pins, tied for shielding):
+     20, 22, 24, 28, 30, 34
 NC:  25 (open per SCSI-1 spec)
 TERMPWR: 26
 ```

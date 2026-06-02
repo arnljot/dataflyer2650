@@ -1,0 +1,33 @@
+# Claude Code local state
+.claude/
+
+# KiCad auto-backups
+*-backups/
+
+# KiCad lock & temp files
+*.lck
+~*.tmp
+~*.lck
+*.000
+*.bak
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+
+# KiCad footprint/symbol caches
+fp-info-cache
+*-cache.lib
+
+# Freerouting / autorouter junk
+*.ses.bak
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor junk
+*.swp
+*.swo
+*~

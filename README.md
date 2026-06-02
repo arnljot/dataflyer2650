@@ -70,6 +70,7 @@ See `PINOUT.md` for the full mapping table.
 
 - **1.0** — Initial release.
 - **1.1** — Bugfix: tie SCSI-1 reserved IDC50 pins (20, 22, 24, 28, 30, 34) to GND. PCB: J1 moved ~3.5 mm inboard for cleaner routing (does not affect mating with DataFlyer 1200 SCSI+ or Phase5 Blizzard IV SCSI kit).
+- **1.1.1** — Patch (no GitHub release per the policy below). Front silkscreen overhaul: board name and revision now driven by `${BOARD_NAME}` / `${BOARD_REV}` project text variables, github URL added, attribution lines split for readability. J1 pin 1 marker added on bottom copper (B.Cu, mirrored, bold). No schematic or routing changes — electrically identical to 1.1.
 
 ## Release policy
 

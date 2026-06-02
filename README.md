@@ -1,14 +1,17 @@
-# Dataflyer 1200 SCSI+ — 26-pin to 50-pin SCSI Adapter
+# DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter
 
 A small PCB that plugs onto the 26-pin SCSI header of the Expansion Systems
 DataFlyer 1200 SCSI+ controller card and exposes a standard 50-pin IDC SCSI
 header on the opposite side, allowing connection to internal 50-pin SCSI
 devices such as the BlueSCSI v2 Desktop.
 
+If one uses a 90° angled female 26-pin IDC connector on the underside, it
+can then be used with the Phase5 Blizzard IV SCSI kit instead.
+
 ## Initial work by highpuff @ ikod.se
 
 This PCB was born from the need to have an BlueSCSI Desktop V2 mounted inside
-an Amiga 1200 machine in a Checkmate 1500 plus cabinet with a Dataflyer 1200
+an Amiga 1200 machine in a Checkmate 1500 plus cabinet with a DataFlyer 1200
 SCSI+.
 
 Googling for 26pin to 50pin solutions brought up the work by highpuff.
@@ -19,18 +22,18 @@ Freerouting.
 
 ## Physical design
 
-- **J1 (26-pin IDC, 2x13)**: mounted on the **bottom** side of the PCB,
-  plugs directly down onto the Dataflyer card's 26-pin male header.
-- **J2 (50-pin IDC, 2x25)**: mounted on the **top** side of the PCB,
+- **J1 (26-pin IDC female, 2x13)**: mounted on the **bottom** side of the PCB,
+  plugs directly down onto the SCSI controller card's 26-pin male header.
+- **J2 (50-pin IDC male shrouded, 2x25)**: mounted on the **top** side of the PCB,
   accepts a standard 50-pin IDC ribbon cable to internal SCSI devices.
-- **Silk screen**: both connectors have clear "PIN 1" arrows on the silk
-  screen on both top and bottom layers.
+- **Silk screen**: the top 50-pin connector has a clear "PIN 1" arrow on the
+  silk screen.
 
 ```
      ┌─────────────────────────────────┐
      │          ┌──────────────┐◄PIN 1 │
      │          │ J1: 26-pin   │       │  ← BOTTOM (B.Cu / B.SilkS)
-     │          │ IDC female   │       │     plugs onto Dataflyer
+     │          │ IDC female   │       │     plugs onto SCSI controller card
      │          │ (underside)  │       │
      │          └──────────────┘       │
      │                                 │
@@ -41,15 +44,15 @@ Freerouting.
      └─────────────────────────────────┘
 ```
 
-## Pinout source — IMPORTANT
+## Pinout source
 
 The pinout mapping in this project is derived from:
 
-1. The Apple/Amiga DB25 SCSI standard (also documented in the Dataflyer
+1. The Apple/Amiga DB25 SCSI standard (also documented in the DataFlyer
    SCSI+ Users Manual, page 33)
 2. The standard 50-pin SCSI-1 pinout
 3. The IDC26-to-IDC50 mapping documented at iKod.se (originally for
-   Blizzard SCSI Kit IV, which uses the same convention)
+   the Phase5 Blizzard IV SCSI kit, which uses the same convention)
 
 See `PINOUT.md` for the full mapping table.
 
@@ -60,6 +63,8 @@ See `PINOUT.md` for the full mapping table.
 - `dataflyer-2650.kicad_pcb` — PCB layout (rev 1.0, routed + GND zones)
 - `PINOUT.md` — Pinout reference table
 - `BOM.csv` — Bill of materials with Mouser part numbers
+- `LICENSE.md` — Licensing notice (CERN-OHL-S-2.0)
+- `CERN-OHL-S-2.0.txt` — Full text of the CERN-OHL-S-2.0 license
 
 ## Revision history
 
@@ -80,7 +85,7 @@ This adapter does NOT include termination resistors. The assumption is:
 
 ## Licensing
 
-Dataflyer 1200 SCSI+ — 26-pin to 50-pin SCSI Adapter
+DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter
 Copyright (C) 2026 Arnljot Arntsen <arnljot_arntsen@hotmail.com>
 
 Is licensed under CERN-OHL-S-2.0, see `LICENSE.md` for full details.

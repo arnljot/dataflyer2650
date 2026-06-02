@@ -1,4 +1,4 @@
-# Pinout reference: 26-pin IDC → 50-pin IDC SCSI Adapter
+# DataFlyer 2650 — Pinout reference (26-pin IDC → 50-pin IDC)
 
 ## Assumed convention
 
@@ -6,7 +6,7 @@ The 26-pin IDC to 50-pin cable was first mapped out by highpuff
 for his replacement cable for his Phase5 Blizzard IV SCSI kit.
 
 When this PCB was designed it was confirmed that it was the same
-for the Expansion Systems Dataflyer 1200 SCSI+.
+for the Expansion Systems DataFlyer 1200 SCSI+.
 
 ## Full mapping table
 
@@ -41,7 +41,7 @@ for the Expansion Systems Dataflyer 1200 SCSI+.
 
 ## IDC50 ground net
 
-Per the Dataflyer manual (page 33): **all odd pins except pin 25 are
+Per the DataFlyer manual (page 33): **all odd pins except pin 25 are
 connected to ground**.
 
 ```

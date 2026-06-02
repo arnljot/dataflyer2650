@@ -2,4 +2,4 @@ Reference,Quantity,Description,Manufacturer,MPN,Mouser PN,DigiKey PN,Approx Pric
 J1,1,"26-pin (2x13) 2.54mm female socket, PCB mount, vertical, through-hole",Sullins,PPPC132LFBN-RC,649-PPPC132LFBN-RC,S7116-ND,$1.50
 J1 (alt),1,"Alternative J1 (for Phase5 Blizzard IV SCSI kit): 26-pin (2x13) 2.54mm female socket, right-angle, through-hole. Drop-in for J1 footprint (drill ≥1.02mm)",Sullins,PPPC132LJBN-RC,649-PPPC132LJBN-RC,S5566-ND,$1.90
 J2,1,"50-pin (2x25) 2.54mm shrouded male IDC header, vertical, PCB mount",3M,N2550-6002-RB,517-N2550-6002RB,MHC50K-ND,$3.00
-PCB,1,"2-layer PCB, ~50x35mm, 1.6mm FR4, HASL or ENIG finish",JLCPCB/PCBWay,N/A,N/A,N/A,$1.50
+PCB,1,"2-layer PCB, ~73.5x35mm, 1.6mm FR4, HASL or ENIG finish",JLCPCB/PCBWay,N/A,N/A,N/A,$1.50

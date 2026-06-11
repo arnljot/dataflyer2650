@@ -59,8 +59,8 @@ See `PINOUT.md` for the full mapping table.
 ## Files
 
 - `dataflyer-2650.kicad_pro` — KiCad 10 project file
-- `dataflyer-2650.kicad_sch` — Schematic (rev 1.0, all 76 pins labeled)
-- `dataflyer-2650.kicad_pcb` — PCB layout (rev 1.0, routed + GND zones)
+- `dataflyer-2650.kicad_sch` — Schematic (rev 1.2, all 76 pins labeled)
+- `dataflyer-2650.kicad_pcb` — PCB layout (rev 1.2, routed + GND zones)
 - `PINOUT.md` — Pinout reference table
 - `BOM.csv` — Bill of materials with Mouser part numbers
 - `LICENSE.md` — Licensing notice (CERN-OHL-S-2.0)
@@ -68,6 +68,7 @@ See `PINOUT.md` for the full mapping table.
 
 ## Revision history
 
+- **1.2** — New **reverse-L board outline** (79.05 × 26.01 mm) that wraps around the Phase5 Blizzard SCSI kit. A full-width top band carries the 50-pin J2; the board extends down only on the right to form a tab carrying the 26-pin J1, with the lower-left corner removed. J2 is pushed further toward the **rear** of the A1200 to keep the SCSI cable clear of the keyboard where the case tapers toward the front. For DataFlyer 1200 SCSI+ mounting, the area to the left of the 26-pin connector (toward the PCMCIA slot) has been minimized as far as possible to avoid fouling the A1200 RF shielding. **Known limitation:** the SCSI cable still exits to the left; a future revision may rotate J2 180° so the cable clears the RF shielding. **Tested working** in an Amiga 1200 with the Phase5 Blizzard IV SCSI kit; **not yet tested** in the Expansion Systems DataFlyer 1200 SCSI+. Schematic and pinout unchanged from 1.1.1 — outline/layout change only, electrically identical.
 - **1.1.1** — Patch (no GitHub release per the policy below). Front silkscreen overhaul: board name and revision now driven by `${BOARD_NAME}` / `${BOARD_REV}` project text variables, github URL added, attribution lines split for readability. J1 pin 1 marker added on bottom copper (B.Cu, mirrored, bold). No schematic or routing changes — electrically identical to 1.1.
 - **1.1** — Bugfix: tie SCSI-1 reserved IDC50 pins (20, 22, 24, 28, 30, 34) to GND. PCB: J1 moved ~3.5 mm inboard for cleaner routing (does not affect mating with DataFlyer 1200 SCSI+ or Phase5 Blizzard IV SCSI kit).
 - **1.0** — Initial release.

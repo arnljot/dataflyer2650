@@ -8,10 +8,10 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "Dataflyer/Blizzard 26-to-50 SCSI Adapter (T-shape)")
-		(date "2026-06-02")
-		(rev "1.1")
-		(comment 1 "T-shape: J1 horizontal at top-left corner, J2 vertical.")
+		(title "${BOARD_NAME}")
+		(date "2026-06-11")
+		(rev "${BOARD_REV}")
+		(comment 1 "Reverse-L outline: full-width top band (J2 50-pin) + lower-right tab (J1 26-pin), lower-left removed.")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -90,7 +90,7 @@
 		)
 	)
 	(property "BOARD_NAME" "DataFlyer 2650 — 26-pin to 50-pin SCSI Adapter")
-	(property "BOARD_REV" "1.2")
+	(property "BOARD_REV" "1.2.1")
 	(footprint "Connector_IDC:IDC-Header_2x25_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c407b3a1-5d87-4b3e-ba69-7ad8b905a4e4")

@@ -61,8 +61,8 @@ See `PINOUT.md` for the full mapping table.
 ## Files
 
 - `dataflyer-2650.kicad_pro` — KiCad 10 project file
-- `dataflyer-2650.kicad_sch` — Schematic (rev 1.2, all 76 pins labeled)
-- `dataflyer-2650.kicad_pcb` — PCB layout (rev 1.2, routed + GND zones)
+- `dataflyer-2650.kicad_sch` — Schematic (rev 1.3, all 76 pins labeled)
+- `dataflyer-2650.kicad_pcb` — PCB layout (rev 1.3, routed + GND zones)
 - `PINOUT.md` — Pinout reference table
 - `BOM.csv` — Bill of materials with Mouser part numbers
 - `LICENSE.md` — Licensing notice (CERN-OHL-S-2.0)
@@ -70,6 +70,7 @@ See `PINOUT.md` for the full mapping table.
 
 ## Revision history
 
+- **1.3** — Bugfix: in 1.2 the front and back board-edge outlines did not match — the two horizontal step edges that run parallel to the connectors did not overlap between the F and B sides. Both sides now share the same outline (the lower-right tab edge was corrected). No schematic or pinout change — electrically identical to 1.2, same reverse-L design. Gerbers + drill re-exported (metadata now correctly reports rev 1.3). Outline correction over the Blizzard-tested 1.2; re-verification on hardware pending.
 - **1.2.1** — Patch (no GitHub release per the policy below). PCB title-block cleanup: the title block previously still read rev `1.1` with a stale "T-shape" title/comment, so the exported Gerber metadata (`.gbrjob` ProjectId revision and the `TF.ProjectId` lines) reported `1.1` even though the silkscreen printed `Rev 1.2`. The title-block `title`/`rev` fields now reference `${BOARD_NAME}` / `${BOARD_REV}`, making the project text variables the single source of truth for both the printed silkscreen and the Gerber metadata. No schematic, routing, or outline change — electrically identical to 1.2. **Note:** the Gerbers in the tree must be re-exported from KiCad to pick up the corrected metadata.
 - **1.2** — New **reverse-L board outline** (79.05 × 26.01 mm) that wraps around the Phase5 Blizzard SCSI kit. A full-width top band carries the 50-pin J2; the board extends down only on the right to form a tab carrying the 26-pin J1, with the lower-left corner removed. J2 is pushed further toward the **rear** of the A1200 to keep the SCSI cable clear of the keyboard where the case tapers toward the front. For DataFlyer 1200 SCSI+ mounting, the area to the left of the 26-pin connector (toward the PCMCIA slot) has been minimized as far as possible to avoid fouling the A1200 RF shielding. **Known limitation:** the SCSI cable still exits to the left; a future revision may rotate J2 180° so the cable clears the RF shielding. **Tested working** in an Amiga 1200 with the Phase5 Blizzard IV SCSI kit; **not yet tested** in the Expansion Systems DataFlyer 1200 SCSI+. Schematic and pinout unchanged from 1.1.1 — outline/layout change only, electrically identical.
 - **1.1.1** — Patch (no GitHub release per the policy below). Front silkscreen overhaul: board name and revision now driven by `${BOARD_NAME}` / `${BOARD_REV}` project text variables, github URL added, attribution lines split for readability. J1 pin 1 marker added on bottom copper (B.Cu, mirrored, bold). No schematic or routing changes — electrically identical to 1.1.

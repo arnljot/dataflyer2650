@@ -30,18 +30,20 @@ Freerouting.
   silk screen.
 
 ```
-     ┌─────────────────────────────────┐
-     │          ┌──────────────┐◄PIN 1 │
-     │          │ J1: 26-pin   │       │  ← BOTTOM (B.Cu / B.SilkS)
-     │          │ IDC female   │       │     plugs onto SCSI controller card
-     │          │ (underside)  │       │
-     │          └──────────────┘       │
-     │                                 │
-     │          ┌─────────────────┐    │  ← TOP (F.Cu / F.SilkS)
-     │          │ J2: 50-pin IDC  │    │
-     │          │  male shrouded  │    │
-     │    PIN 1►└─────────────────┘    │
-     └─────────────────────────────────┘
+     ┌──────────────────────────────────────────┐
+     │  ┌────────────────────────────────────┐   │   ← TOP side (F.Cu / F.SilkS)
+     │  │ J2: 50-pin IDC male shrouded        │   │     50-pin ribbon to SCSI devices
+     │  └────────────────────────────────────┘   │
+     │  ▲ PIN 1                                   │
+     │                                           │
+     └─────────────────────┐                     │   lower-LEFT corner removed so the
+                           │  ┌───────────────┐  │   board clears a wedge A1200 +
+                           │  │ J1: 26-pin    │  │   Blizzard (SCSI cable exits left)
+                           │  │ IDC female    │  │
+                           │  │ (underside)   │  │   ← BOTTOM side (B.Cu / B.SilkS)
+                           │  │ ▲ PIN 1       │  │     plugs onto controller card
+                           │  └───────────────┘  │
+                           └─────────────────────┘
 ```
 
 ## Pinout source

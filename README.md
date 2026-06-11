@@ -30,11 +30,11 @@ Freerouting.
   silk screen.
 
 ```
-     ┌──────────────────────────────────────────┐
+     ┌───────────────────────────────────────────┐
      │  ┌────────────────────────────────────┐   │   ← TOP side (F.Cu / F.SilkS)
-     │  │ J2: 50-pin IDC male shrouded        │   │     50-pin ribbon to SCSI devices
+     │  │ J2: 50-pin IDC male shrouded       │   │     50-pin ribbon to SCSI devices
      │  └────────────────────────────────────┘   │
-     │  ▲ PIN 1                                   │
+     │  ▲ PIN 1                                  │
      │                                           │
      └─────────────────────┐                     │   lower-LEFT corner removed so the
                            │  ┌───────────────┐  │   board clears a wedge A1200 +

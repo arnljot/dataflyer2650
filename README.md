@@ -8,14 +8,14 @@ devices such as the BlueSCSI v2 Desktop.
 If one uses a 90° angled female 26-pin IDC connector on the underside, it
 can then be used with the Phase5 Blizzard IV SCSI kit instead.
 
-> **⚠ Compatibility & test status (read first):**
-> The current board is routed for the **Phase5 Blizzard IV SCSI kit**
-> orientation. The Expansion Systems **DataFlyer 1200 SCSI+** presents its
-> 26-pin header **mirrored** relative to the Blizzard — the pinout is identical,
-> but the odd-pin and even-pin rows are swapped — so this board **will not work
-> with the DataFlyer without rework**. Only **v1.1** has been bench-tested on
-> real hardware (with the Blizzard kit); v1.2–v1.4 are outline/routing fixes
-> that have **not been re-tested**.
+> **⚠ Test status (read first):**
+> The **DataFlyer 1200 SCSI+** and the **Phase5 Blizzard IV SCSI kit** share the
+> same 26-pin header pinout, so this board works with both. (An earlier worry
+> that the DataFlyer was mirrored came from an out-of-date NCR5380 datasheet; the
+> correct datasheet for the 44-pin PLCC package matches, and this was verified
+> with a multimeter against the 26-pin header.) Only **v1.1** has been
+> bench-tested on real hardware (with the Blizzard kit); v1.2–v1.4 are
+> outline/routing fixes that have **not been re-tested**.
 
 ## Initial work by highpuff @ ikod.se
 
@@ -79,7 +79,7 @@ See `PINOUT.md` for the full mapping table.
 
 ## Revision history
 
-- **1.4** — Bugfix: PCBWay flagged that **J1 pin 22 was not connected**. The board has been **manually routed** to close the gap. It now measures ~79 × 27 mm (reverse-L outline with a small lower-left cut-out). This revision also documents a newly discovered incompatibility: the **DataFlyer 1200 SCSI+ 26-pin header is mirrored** relative to the Phase5 Blizzard — same pinout, but the odd-pin and even-pin rows are swapped — so the board **will not work with the DataFlyer without rework** (see the compatibility note at the top). Pinout unchanged; routing fix only.
+- **1.4** — Bugfix: PCBWay flagged that **J1 pin 22 was not connected**. The board has been **manually routed** to close the gap. It now measures ~79 × 27 mm (reverse-L outline with a small lower-left cut-out). Pinout unchanged; routing fix only.
 - **1.3** — Bugfix: in 1.2 the front and back board-edge outlines did not match — the two horizontal step edges that run parallel to the connectors did not overlap between the F and B sides. Both sides now share the same outline (the lower-right tab edge was corrected). No schematic or pinout change — electrically identical to 1.2, same reverse-L design. Gerbers + drill re-exported (metadata now correctly reports rev 1.3). Outline correction over 1.2 (see the compatibility & test-status note at the top).
 - **1.2.1** — Patch (no GitHub release per the policy below). PCB title-block cleanup: the title block previously still read rev `1.1` with a stale "T-shape" title/comment, so the exported Gerber metadata (`.gbrjob` ProjectId revision and the `TF.ProjectId` lines) reported `1.1` even though the silkscreen printed `Rev 1.2`. The title-block `title`/`rev` fields now reference `${BOARD_NAME}` / `${BOARD_REV}`, making the project text variables the single source of truth for both the printed silkscreen and the Gerber metadata. No schematic, routing, or outline change — electrically identical to 1.2. **Note:** the Gerbers in the tree must be re-exported from KiCad to pick up the corrected metadata.
 - **1.2** — New **reverse-L board outline** (79.05 × 26.01 mm) that wraps around the Phase5 Blizzard SCSI kit. A full-width top band carries the 50-pin J2; the board extends down only on the right to form a tab carrying the 26-pin J1, with the lower-left corner removed. J2 is pushed further toward the **rear** of the A1200 to keep the SCSI cable clear of the keyboard where the case tapers toward the front. For DataFlyer 1200 SCSI+ mounting, the area to the left of the 26-pin connector (toward the PCMCIA slot) has been minimized as far as possible to avoid fouling the A1200 RF shielding. **Known limitation:** the SCSI cable still exits to the left; a future revision may rotate J2 180° so the cable clears the RF shielding. Schematic and pinout unchanged from 1.1.1 — outline/layout change only, electrically identical. (Hardware test status is tracked in the note at the top of this README.)
